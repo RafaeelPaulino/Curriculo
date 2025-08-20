@@ -1,5 +1,4 @@
-
-[<img loading="lazy" src="https://avatars.githubusercontent.com/u/223026797?v=4" width=115>](https://github.com/RafaeelPaulino) Rafael Paulino — Currículo Online
+Rafael Paulino — Currículo Online
 
 Bem-vindo ao meu currículo digital! Este repositório contém a versão mais recente do meu portfólio profissional, desenvolvido com HTML, CSS e JavaScript. Ele está hospedado diretamente no GitHub Pages, tornando-o acessível a qualquer momento e de qualquer lugar.
 
