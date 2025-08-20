@@ -37,6 +37,3 @@ Você pode entrar em contato comigo através dos seguintes canais:
 - 💼 LinkedIn: [linkedin.com/in/rafaeelpaulino](https://www.linkedin.com/in/rafaeelpaulino-)
 - 🌐 GitHub: [github.com/RafaeelPaulino](https://github.com/RafaeelPaulino)
 
-## 📄 Licença
-
-Este projeto está licenciado sob a Licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais informações.
