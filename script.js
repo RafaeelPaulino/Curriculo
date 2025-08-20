@@ -38,11 +38,15 @@ projetoCards.forEach((card) => {
 });
 
 // Animação de entrada das seções
-window.addEventListener("load", () => {
-  const allSections = document.querySelectorAll("section");
-  allSections.forEach((section) => {
-    section.style.opacity = 1;
-    section.style.transform = "translateY(0)";
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+    }
   });
 });
 
+const allSections = document.querySelectorAll("section");
+allSections.forEach((section) => {
+  observer.observe(section);
+});
