@@ -1,12 +1,9 @@
-// Seleção unificada das seções e links
 const sections = document.querySelectorAll("section");
 const menuLinks = document.querySelectorAll("nav ul li a");
-const projetoCards = document.querySelectorAll(".projeto-card");
 
-// Função para atualizar link ativo no menu
 function updateActiveLink() {
   let current = "";
-  const scrollPos = window.scrollY + 100; // ajuste fino para topo do viewport
+  const scrollPos = window.scrollY + 100;
 
   sections.forEach((section) => {
     if (scrollPos >= section.offsetTop) {
@@ -21,3 +18,5 @@ function updateActiveLink() {
     }
   });
 }
+
+window.addEventListener("scroll", updateActiveLink);
