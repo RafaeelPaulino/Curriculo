@@ -1,39 +1,85 @@
-/* ... resto do seu CSS igual ... */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff; /* fundo branco */
+  color: #000000; /* texto preto */
+}
 
-/* Estilo para a seção de Conhecimentos Técnicos, Idiomas e Habilidades */
-#conhecimentos {
+nav {
+  background-color: #0a66c2;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+nav ul li a.active {
+  border-bottom: 2px solid #ffffff;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.perfil-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 20px auto;
+}
+
+.social-buttons a {
+  margin: 5px;
+  text-decoration: none;
+  color: #0a66c2;
+  font-weight: bold;
+}
+
+.card {
   max-width: 900px;
   margin: 50px auto;
   padding: 20px 30px;
-  border-left: 4px solid #0a66c2; /* azul LinkedIn */
-  background-color: #f3f6f8; /* cinza claro */
+  border-left: 4px solid #0a66c2;
+  background-color: #f3f6f8;
   border-radius: 10px;
-  opacity: 0;
-  transform: translateY(50px);
-  transition: all 0.6s ease-out;
   scroll-margin-top: 70px;
 }
 
-#conhecimentos.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-#conhecimentos h2 {
+.card h2 {
   font-size: 1.8em;
   margin-bottom: 10px;
   border-bottom: 2px solid #0a66c2;
   padding-bottom: 5px;
-  color: #0a66c2; /* azul LinkedIn */
+  color: #0a66c2;
 }
 
-#conhecimentos ul {
+.card ul {
   list-style: disc inside;
   margin: 10px 0 20px 0;
-  color: #000000; /* texto preto */
 }
 
-#conhecimentos ul li {
+.card ul li {
   margin: 5px 0;
   line-height: 1.5;
 }
