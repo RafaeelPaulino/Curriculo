@@ -1,14 +1,18 @@
-* { margin:0; padding:0; box-sizing:border-box; }
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+}
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #fff;
-  color: #333;
+  background-color: #ffffff; /* Fundo branco */
+  color: #333333; /* Texto escuro para contraste */
   line-height: 1.6;
 }
 
 nav {
-  background-color: #0073b1;
+  background-color: #0073b1; /* Azul LinkedIn */
   padding: 1rem;
   text-align: center;
 }
@@ -23,25 +27,41 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
   font-weight: bold;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  border-bottom: 2px solid #ffffff;
 }
 
 header {
   text-align: center;
   padding: 2rem;
-  background-color: #f4f4f4;
+  background-color: #f8f9fa; /* Leve cinza para contraste */
+  border-bottom: 1px solid #ddd;
 }
 
 header h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  color: #0073b1; /* Azul LinkedIn para destaque */
 }
 
 header p {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.perfil-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 15px auto;
+  border: 3px solid #0073b1;
 }
 
 .social-buttons {
@@ -51,44 +71,54 @@ header p {
 .social-buttons a {
   margin: 0 10px;
   font-size: 1.5rem;
-  color: #fff;
-  background-color: #0073b1;
+  color: #ffffff;
+  background-color: #0073b1; /* Azul LinkedIn */
   border-radius: 50%;
   padding: 10px;
   text-decoration: none;
+  transition: 0.3s;
 }
 
 .social-buttons a:hover {
   background-color: #005f8a;
 }
 
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
 .card {
   padding: 2rem;
   margin: 2rem 0;
-  background-color: #f9f9f9;
-  border-radius: 8px;
+  background-color: #f8f9fa; /* Fundo leve para os cards */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
 }
 
 .card h2 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
+  color: #0073b1; /* Azul LinkedIn */
 }
 
 .card ul {
-  list-style: none;
+  list-style: disc inside;
+  margin-left: 0;
+  color: #333;
 }
 
 .card ul li {
   margin-bottom: 0.8rem;
 }
 
-footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #0073b1;
-  color: #fff;
-}
-
-footer p {
-  font-size: 1rem;
+@media screen and (max-width: 768px) {
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+  .card {
+    padding: 1.5rem;
+  }
 }
