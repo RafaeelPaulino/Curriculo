@@ -6,14 +6,14 @@ function updateActiveLink() {
   const scrollPos = window.scrollY + 100;
 
   sections.forEach(section => {
-    if (scrollPos >= section.offsetTop) {
+    if(scrollPos >= section.offsetTop){
       current = section.getAttribute("id");
     }
   });
 
   menuLinks.forEach(link => {
     link.classList.remove("active");
-    if (link.getAttribute("href") === `#${current}`) {
+    if(link.getAttribute("href") === `#${current}`){
       link.classList.add("active");
     }
   });
