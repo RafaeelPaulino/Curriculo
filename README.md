@@ -16,7 +16,7 @@ Este projeto tem como objetivo apresentar minhas informações profissionais de 
 
 Você pode acessar a versão online do meu currículo através do GitHub Pages:
 
-🔗 [https://rafapaulino.github.io/Curriculo/](https://rafapaulino.github.io/Curriculo/)
+🔗 [https://rafapaulino.github.io/Curriculo/](https://rafaeelpaulino.github.io/Curriculo/)
 
 ## 🛠️ Tecnologias utilizadas
 
