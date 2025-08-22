@@ -1,22 +1,110 @@
-const sections = document.querySelectorAll("section");
-const menuLinks = document.querySelectorAll("nav ul li a");
-
-function updateActiveLink() {
-  let current = "";
-  const scrollPos = window.scrollY + 100;
-
-  sections.forEach(section => {
-    if (scrollPos >= section.offsetTop) {
-      current = section.getAttribute("id");
-    }
-  });
-
-  menuLinks.forEach(link => {
-    link.classList.remove("active");
-    if (link.getAttribute("href") === `#${current}`) {
-      link.classList.add("active");
-    }
-  });
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-window.addEventListener("scroll", updateActiveLink);
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #0a0a0a; /* fundo preto */
+  color: #ff66cc; /* PinkDark */
+  line-height: 1.6;
+}
+
+nav {
+  background-color: #111;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ff66cc;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  border-bottom: 2px solid #ff66cc;
+}
+
+header {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.perfil-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 20px auto;
+  border: 3px solid #ff66cc;
+}
+
+header h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.social-buttons a {
+  margin: 0 10px;
+  color: #ff66cc;
+  font-size: 1.2em;
+}
+
+.card {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 25px 35px;
+  background-color: #1a1a1a;
+  border-left: 5px solid #ff66cc;
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(255, 102, 204, 0.3);
+}
+
+.card h2 {
+  color: #ff66cc;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ff66cc;
+  padding-bottom: 5px;
+}
+
+.card ul {
+  list-style: disc inside;
+  margin-bottom: 15px;
+}
+
+.card ul li {
+  margin: 5px 0;
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .card {
+    width: 90%;
+    padding: 20px;
+  }
+}
